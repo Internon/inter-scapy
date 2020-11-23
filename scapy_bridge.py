@@ -3,6 +3,7 @@
 """
     Use scapy to modify packets going through your machine.
     Based on nfqueue to block packets in the kernel and pass them to scapy for validation
+    Author: Mario Sala (A2SECURE); Internon
 """
 
 import nfqueue
@@ -10,8 +11,8 @@ from scapy.all import *
 import os
 
 # All packets that should be filtered :
-targetip = "10.11.2.213"
-localip = "10.93.3.124"
+targetip = ""
+localip = ""
 srcport = 0 
 shellport = 10443
 attackport = 445
